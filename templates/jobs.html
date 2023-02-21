@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="vacancies">
+        <h3 class="vacancies-head">Vacancies</h3>
+        {% for job in jobs %}
+        <div class="card">
+            <div class="card-header">
+              {{job.title}}
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">{{job.company}}</h4>
+              <h6 class="card-title">{{job.location}}</h6>
+              <p class="card-text">{{job.description}}</p>
+              <a href="#" class="btn btn-outline-primary">Apply</a>
+              <a href="#" class="btn btn-outline-success"><i class="bi bi-bookmark-fill">Save</i></a>
+              <a href="#" class="btn btn-outline-info"><i class="bi bi-info"></i></a>
+              
+            </div>
+          </div>
+        {% endfor %}
+</body>
+</html>

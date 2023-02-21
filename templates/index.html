@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shaghalni</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-    <h1 class="logo">EINSTELLUNG</h1>
-    <img src="https://unsplash.com/photos/MYbhN8KaaEc" height="320">
+    <nav class="navbar">
+        <h1 class="logo">EINSTELLUNG</h1>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#">Your Applications</a></li>
+            <li class="nav-item"><a href="#">Login</a></li>
+            <li class="nav-item"><a href="#">Register</a></li>
+        </ul>
+    </nav>
+    <div class="card text-bg-light">
+        <img src="/static/images/banner1.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-light text-center vertical-al text-uppercase">Find your dream JOB</h5>
+        </div>
+      </div>
+    <div class="about">
+        <h3 class="about-head">About us</h3>
+        <p class="about-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus omnis ratione error aut eveniet impedit, quas voluptatum quae voluptas maiores neque tenetur, eius est natus dolorum expedita, fuga eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum incidunt quos voluptatum asperiores sit reiciendis, repellat itaque, obcaecati officia inventore voluptatibus nulla tempora ea error, odit repudiandae. Voluptatem, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, repellat harum laborum impedit odio quos vero ex earum nam quas id illo voluptatum sunt eveniet corrupti incidunt unde voluptates nihil! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui optio hic blanditiis dolor debitis corporis reprehenderit quisquam. Nihil, similique voluptas ad delectus molestiae quaerat deleniti hic vitae excepturi pariatur ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quisquam laboriosam error sequi fuga, hic aliquid, modi culpa ducimus debitis distinctio rem quae amet voluptates, in cupiditate autem quos neque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis sunt mollitia quo, fugit magnam ut dolorum, aliquid suscipit placeat autem inventore eaque illum distinctio tempora fuga minima consequuntur quod amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore deserunt rem explicabo ad quisquam similique laboriosam velit, vero quae hic iure minima asperiores impedit non facere, aut corporis totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error esse quam deleniti, vero placeat facere necessitatibus quis laborum ullam neque maxime molestiae? Sed, voluptates. Repellendus hic dolor accusantium distinctio alias.
+        </p>
+
+    </div>
+        {% for job in jobs %}
+            {% include 'jobs.html' %}
+        {% endfor %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
